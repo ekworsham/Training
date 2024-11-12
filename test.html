@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="Description" content="ProScapes Training">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dropdown Navigation</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+    }
+    select {
+        padding: 10px;
+        font-size: 16px;
+    }
+</style>
+</head>
+<body>
+    <h2>Choose a page to visit:</h2>
+    <select id="pageSelection" onchange="navigate()">
+        <option value="">Select a page...</option>
+        <option value="">Accident Reporting</option>
+        <option value="https://ekworsham.github.io/wdd131/project/Blower.html">Blowers</option>
+        <option value="">Chains & Hooks</option>
+        <option value="">Chainsaws</option>
+        <option value="">Chemicals</option>
+        <option value="">Edgers</option>
+        <option value="">Filters</option>
+        <option value="">Fire Extinguishers</option>
+        <option value="">Fuel</option>
+        <option value="">Handtools</option>
+        <option value="">Ladders</option>
+        <option value="">Maintenance Seasonal Calendar</option>
+        <option value="">Mowers</option>
+        <option value="">Mulching</option>
+        <option value="">Personal Protective Equipment</option>
+        <option value="">Pests</option>
+        <option value="">Plants</option>
+        <option value="">Pruning</option>
+        <option value="">Safety</option>
+        <option value="">Seasonal Color</option>
+        <option value="">Seasonal Operations</option>
+        <option value="">Sprayers</option>
+        <option value="">Skid Steer</option>
+        <option value="">String Trimmers</option>
+        <option value="">Tailers</option>
+        <option value="">The Deadly Douzen</option>
+        <option value="">Tillers</option>
+        <option value="">Turf Grass</option>
+        <option value="">Uniforms</option>
+        <option value="">Utility Hazards</option>
+        <option value="">Vehicles</option>
+        <option value="">Weeds</option>
+
+
+
+        
+
+
+    </select>
+
+    <script>
+        function navigate() {
+            var selectedPage = document.getElementById("pageSelection").value;
+            if (selectedPage !== "") {
+                window.location.href = selectedPage;
+            }
+        }
+    </script>
+</body>
+</html>
