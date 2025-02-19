@@ -19,7 +19,7 @@
 <body>
     <header>
         <img src="images/TrainingLogoFlower3.webp" alt="logo" width="100" height="100">
-        <h1>Training</h1>
+        <h1>Job Descriptions</h1>
 
         <nav>
             <!-- button id and menuLinks is for hamburger icon -->
@@ -38,45 +38,13 @@
             </label>
 
             <div class="pn">
-                <h3>Choose a topic:</h3>
+                <h3>Choose a Job Description:</h3>
                 <select id="pageSelection" onchange="navigate()">
-                    <option value="">Select a page...</option>
-                    <option value="">Accident Reporting</option>
-                    <option value="">Annuals/Perenniels</option>
-                    <option value="blower.html">Blowers</option> 
-                    <option value="">Chainsaws</option>
-                    <option value="">Chemicals</option>
-                    <option value="">Edgers</option>
-                    <option value="">Filters</option>
-                    <option value="">Fire Extinguishers</option>
-                    <option value="">Fuel</option>
-                    <option value="">Handtools</option>
-                    <option value="">Irrigation</option>
-                    <option value="jobDescription.html">Job Description</option>
-                    <option value="">Ladders</option>
-                    <option value="">Leaf Removal</option>
-                    <option value="">Mowers</option>
-                    <option value="">Mulching</option>
-                    <option value="">Operations Manager</option>
-                    <option value="">Personal Protective Equipment</option>
-                    <option value="">Pests</option>
-                    <option value="">Plants</option>
-                    <option value="">Pruning</option>
-                    <option value="">Safety</option>
-                    <option value="">Seasonal</option>
-                    <option value="">Skid Steer</option>
-                    <option value="">Sprayers</option>
-                    <option value="">String Trimmers</option>
-                    <option value="">Tailers</option>
-                    <option value="">The Deadly Dozen</option>
-                    <option value="">Tillers</option>
-                    <option value="">Turf Grass</option>
-                    <option value="">Uniforms</option>
-                    <option value="">Utility Hazards</option>
-                    
-                </select>
-
-
+                    <option value="">Select a Job Description...</option>
+                    <option value="jobDescTeamMem.html">TEAM MEMBER</option>
+                    <option value="jobDescAssisSup.html">ASSISTANT SUPERVISOR</option>
+                    <option value="jobDescSup.html">MAINTENANCE SUPERVISOR</option>
+                    <option value="jobDescOpsMng.html">MAINTENANCE OPERATIONS MANAGER</option>
                 <script>
                     function navigate() {
                         var selectedPage = document.getElementById("pageSelection").value;
@@ -88,24 +56,8 @@
                 
             </div>
 
-            <div class="or">Training Level 
-                <label><input type="radio" name="audience" id="1star" required>1</label>
-                <label><input type="radio" name="audience" id="2star" required>2</label>
-                <label><input type="radio" name="audience" id="3star" required>3</label>
-                <label><input type="radio" name="audience" id="4star" required>4</label>
-                <label><input type="radio" name="audience" id="5star" required>5</label>
-            </div>
-
             <div class="date">
                 <label>Date of Training<input type="date" name="completeDate" id="date" required></label>
-            </div>
-
-            <div class="cbs">Which features would you find useful in this training?
-                <p>(Check all that apply)</p>
-                <label><input type="checkbox" name="durable" id="d" value="yes"> Topic is clearly stated</label>
-                <label><input type="checkbox" name="ease" id="e" value="yes"> Easy to follow</label>
-                <label><input type="checkbox" name="perform" id="p" value="yes"> Informational</label>
-                <label><input type="checkbox" name="design" id="de" value="yes"> Design</label>
             </div>
 
             <div class="wr">
